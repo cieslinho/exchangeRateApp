@@ -8,15 +8,44 @@
     <title>ExchangeRateApp</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a2e1e5dd38.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
-
-
+    <main>
+        <div class="rate-box">
+            <h3>Exchange Rate App</h3>
+            <p>Sprawdź aktualne kursy walut</p>
+            <div class="app-body">
+                <div class="section-left">
+                    <input type="number" class="amount-one" value="1">
+                    <select id="currency-one">
+                        <option value="PLN" selected>PLN</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                        <option value="CHF">CHF</option>
+                    </select>
+                </div>
+                <button class="change">
+                    <i class="fa-solid fa-exchange"></i>
+                </button>
+                <div class="section-right">
+                    <input type="number" class="amount-two" disabled value="0.26">
+                    <select id="currency-two">
+                        <option value="PLN">PLN</option>
+                        <option value="USD" selected>USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                        <option value="CHF">CHF</option>
+                    </select>
+                </div>
+            </div>
+            <p class="currency-info"> 1 PLN = 0,2768 USD</p>
+        </div>
+    </main>
     <script src="script.js"></script>
 </body>
 

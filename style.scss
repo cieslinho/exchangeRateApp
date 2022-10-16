@@ -14,4 +14,109 @@ html {
 body {
 	font-size: 1.6rem;
 	font-family: 'Roboto', sans-serif;
+	background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+main {
+	padding: 0 1em;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+// styles
+
+.rate-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1.5em;
+	text-align: center;
+	max-width: 600px;
+	width: 100%;
+	border: 1px solid #ddd;
+	box-shadow: 0 0 10px black;
+	border-radius: 10px;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	color: white;
+	h3 {
+		margin-bottom: 0.5em 0;
+		font-size: 3.6rem;
+	}
+	p {
+		margin-bottom: 0.5em;
+		font-weight: lighter;
+		font-size: 2.6rem;
+	}
+	.app-body {
+		margin: 1.5em 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.change {
+			margin: 0.2em;
+			padding: 0.5em 2em;
+			align-self: center;
+			background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
+			font-size: 2rem;
+			border: none;
+			border-radius: 15px;
+			color: #fff;
+			cursor: pointer;
+			&:focus {
+				outline: 0;
+				background-image: linear-gradient(60deg, #32a1fc 0%, #90b46a 100%);
+			}
+		}
+		input {
+			margin-bottom: 0.5em;
+			width: 100%;
+			font-size: 4rem;
+		}
+		input,
+		select {
+			color: #fff;
+			border: none;
+			background: none;
+			text-align: center;
+		}
+		select {
+			font-size: 2rem;
+			padding: 1em 0.5em;
+			cursor: pointer;
+		}
+		input:focus,
+		select:focus {
+			outline: none;
+			color: rgb(67, 171, 255);
+		}
+		option {
+			color: #333;
+		}
+		.section-left,
+		.section-right {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			// width: 33.3%;
+		}
+	}
+	.currency-info {
+		margin-top: 1em;
+	}
+}
+
+@media (max-width: 576px) {
+	.rate-box {
+		.app-body {
+			flex-direction: column;
+			.change {
+				margin: 0.5em 0;
+				order: 0;
+				align-self: center;
+				width: 50%;
+			}
+		}
+	}
 }

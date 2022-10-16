@@ -15,5 +15,157 @@ html {
 body {
   font-size: 1.6rem;
   font-family: 'Roboto', sans-serif;
+  background-image: -webkit-gradient(linear, left top, right top, from(#434343), to(black));
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+main {
+  padding: 0 1em;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rate-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5em;
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  border: 1px solid #ddd;
+  -webkit-box-shadow: 0 0 10px black;
+          box-shadow: 0 0 10px black;
+  border-radius: 10px;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  color: white;
+}
+
+.rate-box h3 {
+  margin-bottom: 0.5em 0;
+  font-size: 3.6rem;
+}
+
+.rate-box p {
+  margin-bottom: 0.5em;
+  font-weight: lighter;
+  font-size: 2.6rem;
+}
+
+.rate-box .app-body {
+  margin: 1.5em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rate-box .app-body .change {
+  margin: 0.2em;
+  padding: 0.5em 2em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
+  font-size: 2rem;
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.rate-box .app-body .change:focus {
+  outline: 0;
+  background-image: linear-gradient(60deg, #32a1fc 0%, #90b46a 100%);
+}
+
+.rate-box .app-body input {
+  margin-bottom: 0.5em;
+  width: 100%;
+  font-size: 4rem;
+}
+
+.rate-box .app-body input,
+.rate-box .app-body select {
+  color: #fff;
+  border: none;
+  background: none;
+  text-align: center;
+}
+
+.rate-box .app-body select {
+  font-size: 2rem;
+  padding: 1em 0.5em;
+  cursor: pointer;
+}
+
+.rate-box .app-body input:focus,
+.rate-box .app-body select:focus {
+  outline: none;
+  color: #43abff;
+}
+
+.rate-box .app-body option {
+  color: #333;
+}
+
+.rate-box .app-body .section-left,
+.rate-box .app-body .section-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rate-box .currency-info {
+  margin-top: 1em;
+}
+
+@media (max-width: 576px) {
+  .rate-box .app-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .rate-box .app-body .change {
+    margin: 0.5em 0;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 50%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
